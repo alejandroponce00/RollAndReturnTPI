@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1760999062 source:/home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/main.cpp
+	<iostream>
+	"menu.cpp"
+
+1760999276 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/menu.cpp
+	<iostream>
+	"menu.h"
+
+1760998486 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/menu.h
+	<iostream>
+
