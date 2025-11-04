@@ -1,12 +1,28 @@
 # depslib dependency file v1.0
-1760999062 source:/home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/main.cpp
+1761001563 source:/home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/main.cpp
 	<iostream>
 	"menu.cpp"
+	"rlutil.h"
 
-1760999276 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/menu.cpp
+1761001673 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/menu.cpp
 	<iostream>
 	"menu.h"
+	"rlutil.h"
 
 1760998486 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/menu.h
 	<iostream>
+
+1571584339 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
 

@@ -1,8 +1,11 @@
 #include <iostream>
 #include "menu.h"
+#include "rlutil.h"
+#include "jugar.cpp"
 using namespace std;
 
 void mostrarMenu() {
+
      cout << "\n";
     cout << " ####   &   &  ####" << endl;
     cout << " #   #         #   #" << endl;
@@ -17,12 +20,7 @@ void mostrarMenu() {
     cout << "0 - SALIR" << endl;
     cout << "\n";
 }
-
-void jugar() {
-    cout << "\n=== JUGAR ===" << endl;
-    cout << "Iniciando el juego..." << endl;
-
-}
+void jugar();
 
 void estadisticas() {
     cout << "\n=== ESTADISTICAS ===" << endl;
@@ -61,7 +59,7 @@ int menu() {
                 creditos();
                 break;
             case 0:
-                cout << "\nGracias por jugar. ¡Hasta luego!" << endl;
+                cout << "\nGracias por jugar. Hasta luego!" << endl;
                 continuar = false;
                 break;
             default:
