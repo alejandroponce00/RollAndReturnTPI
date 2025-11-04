@@ -2,6 +2,7 @@
 #include "menu.h"
 #include "rlutil.h"
 #include "jugar.cpp"
+#include "estadisticas.cpp"
 using namespace std;
 
 void mostrarMenu() {
@@ -22,11 +23,7 @@ void mostrarMenu() {
 }
 void jugar();
 
-void estadisticas() {
-    cout << "\n=== ESTADISTICAS ===" << endl;
-    cout << "Mostrando estadísticas del juego..." << endl;
-
-}
+void estadisticas();
 
 void creditos() {
     cout << "\n=== CREDITOS ===" << endl;
