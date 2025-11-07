@@ -1,13 +1,15 @@
 # depslib dependency file v1.0
-1761001563 source:/home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/main.cpp
+1762553734 source:/home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/main.cpp
 	<iostream>
 	"menu.cpp"
 	"rlutil.h"
 
-1761001673 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/menu.cpp
+1762554859 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/menu.cpp
 	<iostream>
 	"menu.h"
 	"rlutil.h"
+	"jugar.cpp"
+	"estadisticas.cpp"
 
 1760998486 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/menu.h
 	<iostream>
@@ -25,4 +27,21 @@
 	<sys/ioctl.h>
 	<sys/types.h>
 	<sys/time.h>
+
+1762554919 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/jugar.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"rlutil.h"
+	"jugar.h"
+
+1762554444 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/jugar.h
+	<iostream>
+
+1762553734 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/estadisticas.cpp
+	<iostream>
+	"estadisticas.h"
+
+1762297999 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/estadisticas.h
+	<iostream>
 
