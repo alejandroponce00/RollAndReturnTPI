@@ -28,14 +28,14 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1762628265 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/jugar.cpp
+1762629625 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/jugar.cpp
 	<iostream>
 	<cstdlib>
 	<ctime>
 	"rlutil.h"
 	"jugar.h"
 
-1762554444 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/jugar.h
+1762629513 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/jugar.h
 	<iostream>
 
 1762553734 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/estadisticas.cpp

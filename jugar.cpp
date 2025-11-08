@@ -24,13 +24,14 @@ int lanzarDado() {
     return resultado;
 }
 
-void competirPorMonedas(int &monedasJ1, int &monedasJ2) {
+void competencia1(int &monedasJ1, int &monedasJ2) {
     int dadoJ1, dadoJ2;
 
     rlutil::setColor(rlutil::LIGHTCYAN);
     cout << "\n=== COMPETENCIA 1 ===" << endl;
     rlutil::resetColor();
-    cout << "Los jugadores competiran por 50 monedas adicionales." << endl;
+    cout << "Los jugadores competiran por 50 monedas oro adicionales." << endl;
+    cout<<"Si empatan ambos se llevan 25 monedas."<<endl;
     cout << endl;
 
     cout << "Jugador 1, presione ENTER para lanzar el dado...";
@@ -95,7 +96,7 @@ void faseInicial(int &monedasJ1, int &monedasJ2) {
     mostrarEstadoJugadores(monedasJ1, monedasJ2);
 
     // Competir por 50 monedas adicionales
-    competirPorMonedas(monedasJ1, monedasJ2);
+    competencia1(monedasJ1, monedasJ2);
 
     // Mostrar estado despues de la fase inicial
     mostrarEstadoJugadores(monedasJ1, monedasJ2);
