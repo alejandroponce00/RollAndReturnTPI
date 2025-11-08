@@ -28,9 +28,9 @@ void competirPorMonedas(int &monedasJ1, int &monedasJ2) {
     int dadoJ1, dadoJ2;
 
     rlutil::setColor(rlutil::LIGHTCYAN);
-    cout << "\n=== FASE INICIAL ===" << endl;
+    cout << "\n=== COMPETENCIA 1 ===" << endl;
     rlutil::resetColor();
-    cout << "Los jugadores competiran por 150 monedas adicionales." << endl;
+    cout << "Los jugadores competiran por 50 monedas adicionales." << endl;
     cout << endl;
 
     cout << "Jugador 1, presione ENTER para lanzar el dado...";
@@ -52,19 +52,19 @@ void competirPorMonedas(int &monedasJ1, int &monedasJ2) {
 
     // Determinar ganador usando condicionales
     if (dadoJ1 > dadoJ2) {
-        monedasJ1 = monedasJ1 + 150;
+        monedasJ1 = monedasJ1 + 50;
         rlutil::setColor(rlutil::YELLOW);
-        cout << "Jugador 1 gana 150 monedas de oro!" << endl;
+        cout << "Jugador 1 gana 50 monedas de oro!" << endl;
         rlutil::resetColor();
     } else if (dadoJ2 > dadoJ1) {
-        monedasJ2 = monedasJ2 + 150;
+        monedasJ2 = monedasJ2 + 50;
         rlutil::setColor(rlutil::YELLOW);
-        cout << "Jugador 2 gana 150 monedas de oro!" << endl;
+        cout << "Jugador 2 gana 50 monedas de oro!" << endl;
         rlutil::resetColor();
     } else {
         // Empate - ambos reciben 75 monedas
-        monedasJ1 = monedasJ1 + 75;
-        monedasJ2 = monedasJ2 + 75;
+        monedasJ1 = monedasJ1 + 25;
+        monedasJ2 = monedasJ2 + 25;
         rlutil::setColor(rlutil::MAGENTA);
         cout << "Empate! Ambos jugadores reciben 75 monedas de oro." << endl;
         rlutil::resetColor();
@@ -94,7 +94,7 @@ void faseInicial(int &monedasJ1, int &monedasJ2) {
     // Mostrar estado inicial
     mostrarEstadoJugadores(monedasJ1, monedasJ2);
 
-    // Competir por 150 monedas adicionales
+    // Competir por 50 monedas adicionales
     competirPorMonedas(monedasJ1, monedasJ2);
 
     // Mostrar estado despues de la fase inicial
@@ -114,8 +114,8 @@ void jugar() {
     faseInicial(monedasJugador1, monedasJugador2);
 
     rlutil::setColor(rlutil::LIGHTGREEN);
-    cout << "Fase inicial completada." << endl;
+    cout << "Competencia #1 completada." << endl;
     rlutil::resetColor();
-    cout << "Continuara con la Fase de busqueda de tesoros..." << endl;
+    cout << "Continuaran con la competencia 2..." << endl;
     cout << endl;
 }

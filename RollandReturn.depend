@@ -28,7 +28,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1762554919 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/jugar.cpp
+1762628265 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/jugar.cpp
 	<iostream>
 	<cstdlib>
 	<ctime>
