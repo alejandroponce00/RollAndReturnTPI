@@ -3,6 +3,7 @@
 #include <ctime>
 #include "rlutil.h"
 #include "jugar.h"
+#include "competencia2.cpp"
 
 using namespace std;
 
@@ -117,6 +118,19 @@ void jugar() {
     rlutil::setColor(rlutil::LIGHTGREEN);
     cout << "Competencia #1 completada." << endl;
     rlutil::resetColor();
-    cout << "Continuaran con la competencia 2..." << endl;
+    cout << "Presione ENTER para continuar con la competencia 2...";
+    cin.get();
+    cout << endl;
+
+    // Ejecutar competencia 2
+    competencia2(monedasJugador1, monedasJugador2);
+
+    // Mostrar estado despues de competencia 2
+    mostrarEstadoJugadores(monedasJugador1, monedasJugador2);
+
+    rlutil::setColor(rlutil::LIGHTGREEN);
+    cout << "Competencia #2 completada." << endl;
+    rlutil::resetColor();
+    cout << "Continuara con la fase de busqueda de tesoros..." << endl;
     cout << endl;
 }
