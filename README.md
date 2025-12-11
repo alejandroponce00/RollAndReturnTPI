@@ -197,22 +197,22 @@ g++ -o RollAndReturn main.cpp Funciones.cpp competencia_1.cpp competencia_2.cpp 
     <td align="center">
       <img src="https://via.placeholder.com/100" width="100px;" alt=""/><br />
       <sub><b>Alberto Alejandro Ponce</b></sub><br />
-      <sub>Legajo: [COMPLETAR]</sub>
+      
     </td>
     <td align="center">
       <img src="https://via.placeholder.com/100" width="100px;" alt=""/><br />
       <sub><b>German Agustin Giujusa</b></sub><br />
-      <sub>Legajo: [COMPLETAR]</sub>
+      <
     </td>
     <td align="center">
       <img src="https://via.placeholder.com/100" width="100px;" alt=""/><br />
       <sub><b>Nicolás Agustin Legal</b></sub><br />
-      <sub>Legajo: [COMPLETAR]</sub>
+      
     </td>
     <td align="center">
       <img src="https://via.placeholder.com/100" width="100px;" alt=""/><br />
       <sub><b>Santiago Centurion</b></sub><br />
-      <sub>Legajo: [COMPLETAR]</sub>
+      
     </td>
   </tr>
 </table>
