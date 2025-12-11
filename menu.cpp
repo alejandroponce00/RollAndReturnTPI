@@ -1,13 +1,14 @@
 #include <iostream>
-#include "menu.h"
 #include "rlutil.h"
-#include "jugar.cpp"
-#include "estadisticas.cpp"
+#include "Funciones.h"
+
 using namespace std;
 
-void mostrarMenu() {
+void mostrarMenu()
+{
+    rlutil::setBackgroundColor(rlutil::BLUE);
 
-     cout << "\n";
+    cout << "\n";
     cout << " ####   &   &  ####" << endl;
     cout << " #   #         #   #" << endl;
     cout << " ####     &    ####" << endl;
@@ -21,50 +22,50 @@ void mostrarMenu() {
     cout << "0 - SALIR" << endl;
     cout << "\n";
 }
-void jugar();
+void jugar(string listaGanadores[],int listaPuntajes[],int &cantidadGanadores);
 
-void estadisticas();
+void estadisticas(string listaGanadores[], int listaPuntajes[], int cantidadGanadores);
 
-void creditos() {
-    cout << "\n=== CREDITOS ===" << endl;
-    cout << "Desarrollado por: "<<endl;
-   cout << "German Agustin Giujusa"<<endl;
-   cout <<"Nicolás Agustin Legal"<<endl;
-   cout <<"Santiago Centurion" << endl;
-   cout <<"Alberto Alejandro Ponce" << endl;
-    cout << "Versión: 1.0" << endl;
+void creditos();
 
-}
-
-int menu() {
+int menu()
+{   //inicializo estas variables
     int opcion;
     bool continuar = true;
+    const int MAX_GANADORES = 20;
+    //vectores
+    string listaGanadores[MAX_GANADORES];
+    int listaPuntajes[MAX_GANADORES];
+    int cantidadGanadores = 0;
 
-    while(continuar) {
+    while(continuar)
+    {
         mostrarMenu();
         cout << "Seleccione una opcion: ";
         cin >> opcion;
 
-        switch(opcion) {
-            case 1:
-                jugar();
-                break;
-            case 2:
-                estadisticas();
-                break;
-            case 3:
-                creditos();
-                break;
-            case 0:
-                cout << "\nGracias por jugar. Hasta luego!" << endl;
-                continuar = false;
-                break;
-            default:
-                cout << "\nOpcion invalida. Por favor, seleccione una opcion valida." << endl;
-                break;
+        switch(opcion)
+        {
+        case 1:
+            jugar(listaGanadores, listaPuntajes, cantidadGanadores);
+            break;
+        case 2:
+            estadisticas(listaGanadores, listaPuntajes, cantidadGanadores);
+            break;
+        case 3:
+            creditos();
+            break;
+        case 0:
+            cout << "\nGracias por jugar. Hasta luego!" << endl;
+            continuar = false;
+            break;
+        default:
+            cout << "\nOpcion invalida. Por favor, seleccione una opcion valida." << endl;
+            break;
         }
 
-        if(continuar) {
+        if(continuar)
+        {
             cout << "\nPresione Enter para continuar...";
             cin.ignore();
             cin.get();

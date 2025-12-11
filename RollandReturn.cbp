@@ -32,7 +32,22 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Funciones.h" />
+		<Unit filename="competencia_1.cpp" />
+		<Unit filename="competencia_2.cpp" />
+		<Unit filename="competencia_3.cpp" />
+		<Unit filename="creditos.cpp" />
+		<Unit filename="estadisticas.cpp" />
+		<Unit filename="fase_busqueda_tesoro.cpp" />
+		<Unit filename="fase_final.cpp" />
+		<Unit filename="fase_inicial.cpp" />
+		<Unit filename="jugar.cpp" />
+		<Unit filename="lanzar_dados.cpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="menu.cpp" />
+		<Unit filename="mostrar_estado_jugadores.cpp" />
+		<Unit filename="mostrar_titulo.cpp" />
+		<Unit filename="rlutil.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

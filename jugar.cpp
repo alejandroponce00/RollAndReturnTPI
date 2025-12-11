@@ -2,120 +2,108 @@
 #include <cstdlib>
 #include <ctime>
 #include "rlutil.h"
-#include "jugar.h"
+#include "Funciones.h"
+
 
 using namespace std;
 
-void mostrarTituloJuego() {
-    rlutil::cls();
-    rlutil::setBackgroundColor(rlutil::BLUE);
-    rlutil::setColor(rlutil::YELLOW);
-    cout << "\n========================================" << endl;
-    cout << "       ROLL AND RETURN" << endl;
-    cout << "       Juego en curso" << endl;
-    cout << "========================================" << endl;
-    rlutil::resetColor();
-    cout << endl;
-}
+void mostrarTituloJuego();
 
-int lanzarDado() {
-    int resultado;
-    resultado = (rand() % 6) + 1;
-    return resultado;
-}
+void competencia_1(string nombres[], int &monedasJ1, int &monedasJ2);
+void competencia_2(string nombres[], int &monedasJ1, int &monedasJ2);
+void competencia_3(string nombres[], int &monedasJ1, int &monedasJ2);
 
-void competirPorMonedas(int &monedasJ1, int &monedasJ2) {
-    int dadoJ1, dadoJ2;
+void mostrarEstadoJugadores(string nombreJ1, int monedasJ1,string nombreJ2, int monedasJ2);
 
-    rlutil::setColor(rlutil::LIGHTCYAN);
-    cout << "\n=== FASE INICIAL ===" << endl;
-    rlutil::resetColor();
-    cout << "Los jugadores competiran por 150 monedas adicionales." << endl;
-    cout << endl;
+void jugar(string listaGanadores[], int listaPuntajes[], int &cantidadGanadores) {
+    int monedasJugador1 = 150, monedasJugador2 = 150;
+    string nombres[2];
+    const int NUM_JUGADORES = 2;
 
-    cout << "Jugador 1, presione ENTER para lanzar el dado...";
-    cin.ignore();
-    cin.get();
-    dadoJ1 = lanzarDado();
-    rlutil::setColor(rlutil::LIGHTGREEN);
-    cout << "Jugador 1 obtuvo: " << dadoJ1 << endl;
-    rlutil::resetColor();
-    cout << endl;
 
-    cout << "Jugador 2, presione ENTER para lanzar el dado...";
-    cin.get();
-    dadoJ2 = lanzarDado();
-    rlutil::setColor(rlutil::LIGHTGREEN);
-    cout << "Jugador 2 obtuvo: " << dadoJ2 << endl;
-    rlutil::resetColor();
-    cout << endl;
-
-    // Determinar ganador usando condicionales
-    if (dadoJ1 > dadoJ2) {
-        monedasJ1 = monedasJ1 + 150;
-        rlutil::setColor(rlutil::YELLOW);
-        cout << "Jugador 1 gana 150 monedas de oro!" << endl;
-        rlutil::resetColor();
-    } else if (dadoJ2 > dadoJ1) {
-        monedasJ2 = monedasJ2 + 150;
-        rlutil::setColor(rlutil::YELLOW);
-        cout << "Jugador 2 gana 150 monedas de oro!" << endl;
-        rlutil::resetColor();
-    } else {
-        // Empate - ambos reciben 75 monedas
-        monedasJ1 = monedasJ1 + 75;
-        monedasJ2 = monedasJ2 + 75;
-        rlutil::setColor(rlutil::MAGENTA);
-        cout << "Empate! Ambos jugadores reciben 75 monedas de oro." << endl;
-        rlutil::resetColor();
-    }
-    cout << endl;
-}
-
-void mostrarEstadoJugadores(int monedasJ1, int monedasJ2) {
-    rlutil::setColor(rlutil::LIGHTCYAN);
-    cout << "=== ESTADO ACTUAL ===" << endl;
-    rlutil::resetColor();
-    rlutil::setColor(rlutil::WHITE);
-    cout << "Jugador 1: " << monedasJ1 << " monedas de oro" << endl;
-    cout << "Jugador 2: " << monedasJ2 << " monedas de oro" << endl;
-    rlutil::resetColor();
-    cout << endl;
-}
-
-void faseInicial(int &monedasJ1, int &monedasJ2) {
-    // Inicializar monedas
-    monedasJ1 = 150;
-    monedasJ2 = 150;
-
-    cout << "Cada jugador comienza con 150 monedas de oro." << endl;
-    cout << endl;
-
-    // Mostrar estado inicial
-    mostrarEstadoJugadores(monedasJ1, monedasJ2);
-
-    // Competir por 150 monedas adicionales
-    competirPorMonedas(monedasJ1, monedasJ2);
-
-    // Mostrar estado despues de la fase inicial
-    mostrarEstadoJugadores(monedasJ1, monedasJ2);
-}
-
-void jugar() {
-    int monedasJugador1, monedasJugador2;
-
-    // Inicializar generador de numeros aleatorios
     srand(time(0));
 
-    // Mostrar titulo del juego
+    cout << "Ingrese nombre del Jugador 1: ";
+    cin >> nombres[0];
+    cout << "Ingrese nombre del Jugador 2: ";
+    cin >> nombres[1];
+    cout << endl;
+
+    cin.ignore();
+
     mostrarTituloJuego();
 
-    // Ejecutar fase inicial
-    faseInicial(monedasJugador1, monedasJugador2);
+    // --- FASE 1: INICIAL ---
+    faseInicial(nombres, monedasJugador1, monedasJugador2);
+	// competencia_1(nombres, monedasJugador1, monedasJugador2);    CORRECCION(SE REPETIA LA FACE INICIAL )
+    //competencia_2(nombres, monedasJugador1, monedasJugador2);
+    //competencia_3(nombres, monedasJugador1, monedasJugador2);
 
     rlutil::setColor(rlutil::LIGHTGREEN);
     cout << "Fase inicial completada." << endl;
     rlutil::resetColor();
-    cout << "Continuara con la Fase de busqueda de tesoros..." << endl;
-    cout << endl;
+
+    cout << "Presione ENTER para continuar a la Busqueda de Tesoros...";
+    cin.get();
+
+    // --- PREPARACIÓN FASE 2: CREAR ARRAYS ---
+    int oroInicial[2] = {monedasJugador1, monedasJugador2};
+    int oro[2] = {monedasJugador1, monedasJugador2};
+
+    int llaveguardada[2] = {0, 0};
+    int llavemadera[2]   = {0, 0};
+    int llavepiedra[2]   = {0, 0};
+    int llavemetal[2]    = {0, 0};
+    int esmeraldas[2]    = {0, 0};
+    int rubies[2]        = {0, 0};
+    int diamantes[2]     = {0, 0};
+
+
+
+    //Arrays para fase final
+
+    bool cofresJ1[3] = {false, false, false};
+    bool cofresJ2[3] = {false, false, false};
+    bool usoLlave[2] = {false, false};
+
+
+    // --- FASE 2: BÚSQUEDA ---
+    fase_busqueda_tesoro(
+        nombres,
+        oro,
+        llaveguardada,
+        llavemadera,
+        llavepiedra,
+        llavemetal,
+        esmeraldas,
+        rubies,
+        diamantes,
+        NUM_JUGADORES,
+        cofresJ1,
+        cofresJ2,
+        usoLlave
+    );
+
+    monedasJugador1 = oro[0];
+    monedasJugador2 = oro[1];
+
+    // --- FASE 3 ----
+    // Llamamos a la fase final con los datos recolectados
+
+    faseFinal(nombres,
+              oro,
+              oroInicial,
+              esmeraldas,
+              rubies,
+              diamantes,
+              cofresJ1,
+              cofresJ2,
+              usoLlave,
+              listaGanadores,
+              listaPuntajes,
+              cantidadGanadores);
+
+    cout << "\nFin de la partida. Presione ENTER para volver al menu.";
+    cin.ignore();
+    cin.get();
 }

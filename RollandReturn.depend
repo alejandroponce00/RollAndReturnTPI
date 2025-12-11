@@ -4,12 +4,16 @@
 	"menu.cpp"
 	"rlutil.h"
 
+1763417842 
+
 1762554859 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/menu.cpp
 	<iostream>
 	"menu.h"
 	"rlutil.h"
 	"jugar.cpp"
 	"estadisticas.cpp"
+
+1762789583 cas.cpp"
 
 1760998486 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/menu.h
 	<iostream>
@@ -28,6 +32,8 @@
 	<sys/types.h>
 	<sys/time.h>
 
+1762555400 h>
+
 1762554919 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/jugar.cpp
 	<iostream>
 	<cstdlib>
@@ -42,6 +48,275 @@
 	<iostream>
 	"estadisticas.h"
 
+1762553734 cas.h"
+
 1762297999 /home/alejandro/Escritorio/programacion_2c/tpi/RollandReturn/estadisticas.h
 	<iostream>
+
+1762790526 source:d:\usaurio\descargas\rollandreturn\main.cpp
+	<iostream>
+	"Funciones.h"
+	"rlutil.h"
+
+1762789583 d:\usaurio\descargas\rollandreturn\menu.cpp
+	<iostream>
+	"rlutil.h"
+	"jugar.cpp"
+	"estadisticas.cpp"
+
+1762555400 d:\usaurio\descargas\rollandreturn\menu.h
+	<iostream>
+
+1762555400 d:\usaurio\descargas\rollandreturn\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1762790376 d:\usaurio\descargas\rollandreturn\jugar.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"rlutil.h"
+	"Funciones.h"
+
+1763415115 .h"
+
+1762555400 d:\usaurio\descargas\rollandreturn\jugar.h
+	<iostream>
+
+1762789592 d:\usaurio\descargas\rollandreturn\estadisticas.cpp
+	<iostream>
+
+1762555400 d:\usaurio\descargas\rollandreturn\estadisticas.h
+	<iostream>
+
+1762789592 source:d:\usaurio\descargas\rollandreturn\estadisticas.cpp
+	<iostream>
+
+1762803568 source:d:\usaurio\descargas\rollandreturn\jugar.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"rlutil.h"
+	"Funciones.h"
+
+1762790526 source:d:\usaurio\descargas\rollandreturn\menu.cpp
+	<iostream>
+	"rlutil.h"
+	"Funciones.h"
+
+1762789568 source:d:\usaurio\descargas\rollandreturn\creditos.cpp
+	<iostream>
+
+1762790162 source:d:\usaurio\descargas\rollandreturn\lanzar_dados.cpp
+	<iostream>
+
+1762803209 d:\usaurio\descargas\rollandreturn\funciones.h
+	<iostream>
+
+1762803234 source:d:\usaurio\descargas\rollandreturn\mostrar_titulo.cpp
+	<iostream>
+	"rlutil.h"
+
+1762803432 source:d:\usaurio\descargas\rollandreturn\competir_por_monedas.cpp
+	<iostream>
+	"Funciones.h"
+	"rlutil.h"
+
+1762803547 source:d:\usaurio\descargas\rollandreturn\mostrar_estado_jugadores.cpp
+	<iostream>
+	"rlutil.h"
+
+1762803694 source:d:\usaurio\descargas\rollandreturn\fase_inicial.cpp
+	<iostream>
+	"Funciones.h"
+
+1762810124 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\competir_por_monedas.cpp
+	<iostream>
+	"Funciones.h"
+	"rlutil.h"
+
+1763417842 c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\funciones.h
+	<iostream>
+	<string>
+
+1762555400 c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1762804701 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\creditos.cpp
+	<iostream>
+
+1763417595 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\estadisticas.cpp
+	<iostream>
+	<string>
+	"rlutil.h"
+	"Funciones.h"
+
+1762867427 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\fase_inicial.cpp
+	<iostream>
+	"Funciones.h"
+
+1763418126 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\jugar.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"rlutil.h"
+	"Funciones.h"
+
+1762790162 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\lanzar_dados.cpp
+	<iostream>
+
+1762790526 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\main.cpp
+	<iostream>
+	"Funciones.h"
+	"rlutil.h"
+
+1762790526 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\menu.cpp
+	<iostream>
+	"rlutil.h"
+	"Funciones.h"
+
+1762811924 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\mostrar_estado_jugadores.cpp
+	<iostream>
+	<string>
+	"Funciones.h"
+	"rlutil.h"
+
+1762803234 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\mostrar_titulo.cpp
+	<iostream>
+	"rlutil.h"
+
+1762811533 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\competencia_1.cpp
+	<iostream>
+	"Funciones.h"
+	"rlutil.h"
+
+1762868237 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\competencia_2.cpp
+	<iostream>
+	<string>
+	"Funciones.h"
+
+1763415115 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\fase_busqueda_tesoro.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"Funciones.h"
+
+1763409745 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\competencia_3.cpp
+	<iostream>
+	"Funciones.h"
+	"rlutil.h"
+
+1763417656 source:c:\users\usuario\documents\utn\programacion\tpirollandreturn\rollandreturn\fase_final.cpp
+	<iostream>
+	"Funciones.h"
+	"rlutil.h"
+
+1765207866 source:/home/alejandro/Escritorio/RollandReturnFinal/competencia_1.cpp
+	<iostream>
+	"Funciones.h"
+	"rlutil.h"
+
+1765143653 /home/alejandro/Escritorio/RollandReturnFinal/Funciones.h
+	<iostream>
+	<string>
+
+1762555400 /home/alejandro/Escritorio/RollandReturnFinal/rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1764452543 source:/home/alejandro/Escritorio/RollandReturnFinal/competencia_2.cpp
+	<iostream>
+	<string>
+	"Funciones.h"
+
+1765200525 source:/home/alejandro/Escritorio/RollandReturnFinal/competencia_3.cpp
+	<iostream>
+	"Funciones.h"
+	"rlutil.h"
+
+1762804701 source:/home/alejandro/Escritorio/RollandReturnFinal/creditos.cpp
+	<iostream>
+
+1765200687 source:/home/alejandro/Escritorio/RollandReturnFinal/estadisticas.cpp
+	<iostream>
+	<string>
+	<iomanip>
+	"rlutil.h"
+	"Funciones.h"
+
+1763415115 source:/home/alejandro/Escritorio/RollandReturnFinal/fase_busqueda_tesoro.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"Funciones.h"
+
+1765203897 source:/home/alejandro/Escritorio/RollandReturnFinal/fase_final.cpp
+	<iostream>
+	"Funciones.h"
+	"rlutil.h"
+
+1765199927 source:/home/alejandro/Escritorio/RollandReturnFinal/fase_inicial.cpp
+	<iostream>
+	"Funciones.h"
+
+1765146750 source:/home/alejandro/Escritorio/RollandReturnFinal/jugar.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"rlutil.h"
+	"Funciones.h"
+
+1762790162 source:/home/alejandro/Escritorio/RollandReturnFinal/lanzar_dados.cpp
+	<iostream>
+
+1765312049 source:/home/alejandro/Escritorio/RollandReturnFinal/main.cpp
+	<iostream>
+	"Funciones.h"
+	"rlutil.h"
+
+1765205889 source:/home/alejandro/Escritorio/RollandReturnFinal/menu.cpp
+	<iostream>
+	"rlutil.h"
+	"Funciones.h"
+
+1762811924 source:/home/alejandro/Escritorio/RollandReturnFinal/mostrar_estado_jugadores.cpp
+	<iostream>
+	<string>
+	"Funciones.h"
+	"rlutil.h"
+
+1762803234 source:/home/alejandro/Escritorio/RollandReturnFinal/mostrar_titulo.cpp
+	<iostream>
+	"rlutil.h"
 
